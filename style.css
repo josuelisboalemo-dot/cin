@@ -1,0 +1,62 @@
+body {
+  background: #0f0f0f;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+
+h1 {
+  color: #00ffcc;
+}
+
+#elementos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.elemento {
+  background: #1e1e1e;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.elemento:hover {
+  transform: scale(1.1);
+  background: #00ffcc;
+  color: black;
+}
+
+#mistura {
+  margin: 20px;
+  min-height: 50px;
+  border: 2px dashed #00ffcc;
+  padding: 10px;
+}
+
+.card {
+  background: #222;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.resultado {
+  border: 2px solid #00ffcc;
+}
+
+/* ANIMAÇÃO */
+#animacao {
+  font-size: 40px;
+  margin-top: 20px;
+  animation: girar 2s linear infinite;
+}
+
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
